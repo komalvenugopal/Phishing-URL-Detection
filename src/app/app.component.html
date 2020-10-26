@@ -1,0 +1,25 @@
+<div class="page">
+    <div class="header">
+        <h1 class="text-info">URL Phishing Detection</h1>
+    </div>
+
+    <form action="" class="main" >
+        <input type="url" class="form-control" ngModel name="url" #in>
+        <button class="btn btn-info" type="submit" (click)="onClick(in.value)"  *ngIf="loaded">Verify</button>
+        <div class="spinner-border text-primary" role="status" *ngIf="!loaded">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </form>
+
+</div>
+
+
+<div class="alert" role="alert"
+     [ngClass]="{'alert-danger':!validUrl,'alert-success':validUrl}"
+     *ngIf="!start && loaded"
+>
+    <span *ngIf="validUrl">Legitimate Url</span>
+    <span *ngIf="!validUrl">Phishing Url</span>
+</div>
+
+

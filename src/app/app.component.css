@@ -1,0 +1,41 @@
+:host{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.page{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    text-align: center;
+    width: 80%;
+}
+
+
+.main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+.spinner-border{
+    width: 5rem;
+    height: 5rem;
+}
+
+.alert{
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+}
